@@ -1,6 +1,11 @@
 body {
     background-color: black;
     color: white;
+    font-family: monospace;
+}
+
+a {
+    color: hotpink;
 }
 
 @media only screen and (max-width: 600px) {
