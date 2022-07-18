@@ -6,7 +6,7 @@
    
 2. Purchase your web domain. I chose [Google Domains](https://domains.google.com/).
 
-3. In Google domains, click on DNS in sidebar and add custom records. Add the following Data for two records of Type A with TTL 1H. The first record will be for Host name `yourdomain.com` and the second for `www.yourdomain.com`.
+3. In Google domains, click on DNS in sidebar and add custom records. Create two seperate records of Type A with TTL 1H. The first record will be for Host name `yourdomain.com` and the second for `www.yourdomain.com`. Add the following in the Data field for both record:
 ```
 185.199.108.153
 185.199.109.153
