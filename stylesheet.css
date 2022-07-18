@@ -10,6 +10,7 @@ a:link, a:visited {
 
 footer {
     text-align: right;
+    padding: 2%;
 }
 
 @media only screen and (max-width: 600px) {
