@@ -19,3 +19,5 @@
 5. Now wait for the DNS check to complete. This may take some time. Github will issue your site with an SSL cert. This means that I now have a running page on the web with only the need to pay for a domain, no paid hosting, certs etc.
 
 6. Be sure to check `Enforce HTTPS`! 
+
+7. Finally, visit my site [here](https://smcgrath.dev/)
