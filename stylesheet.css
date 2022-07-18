@@ -4,7 +4,7 @@ body {
     font-family: monospace;
 }
 
-a {
+a:link, a:visited {
     color: hotpink;
 }
 
