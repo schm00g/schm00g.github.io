@@ -20,4 +20,4 @@
 
 6. Be sure to check `Enforce HTTPS`! 
 
-7. Finally, visit my site [here](https://smcgrath.dev/)
+7. Finally, visit my site [here](https://smcgrath.dev/).
