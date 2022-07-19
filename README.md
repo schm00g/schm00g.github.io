@@ -1,8 +1,8 @@
 # schm00g.github.io
 
-### How to use Github pages to host a custom domain
+### How to use Github Pages to host a custom domain:
 
-1. Set up your Github pages as per [instructions](https://pages.github.com/).
+1. Set up your Github Pages as per [instructions](https://pages.github.com/).
    
 2. Purchase your web domain. I chose [Google Domains](https://domains.google.com/).
 
@@ -14,7 +14,7 @@
 185.199.111.153
 ```
 
-4. In your Github pages `<my-domain>.github.io` repo navigate to `Settings` > `Pages` (in sidebar) > `Custom domain`. Add your domain here.
+4. In your Github Pages repo `<my-domain>.github.io` navigate to `Settings` > `Pages` (in sidebar) > `Custom domain`. Add your domain here.
 
 5. Now wait for the DNS check to complete. This may take some time. Github will issue your site with an SSL cert. This means that I now have a running page on the web with only the need to pay for a domain, no paid hosting, certs etc.
 
