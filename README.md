@@ -21,3 +21,11 @@
 6. Be sure to check `Enforce HTTPS`! 
 
 7. Finally, visit my site [here](https://smcgrath.dev/).
+
+### Site analytics using Umami hosted on Railway. Hmm?
+
+See the live [dashboard](https://umami-production-863f.up.railway.app/share/DM50VHxJ/Blog).
+
+Why [Umami](https://umami.is/)? Well it's private and anonymised where no data is shared with any third-parties. 
+
+I used [Railway](https://railway.app/) to host my Umami instance and PostgreSQL server.
