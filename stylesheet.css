@@ -8,10 +8,6 @@ a:link, a:visited {
     color: hotpink;
 }
 
-pre {
-    opacity: calc()
-}
-
 footer {
     text-align: right;
     padding: 2%;
