@@ -27,5 +27,3 @@
 See the live [dashboard](https://umami-production-863f.up.railway.app/share/DM50VHxJ/Blog).
 
 Why [Umami](https://umami.is/)? Well it's private and anonymised meaning no data is shared with third-parties. 
-
-I used [Railway](https://railway.app/) to self-host my Umami instance and PostgreSQL server.
