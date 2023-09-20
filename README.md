@@ -22,7 +22,7 @@
 
 7. Finally, visit my site [here](https://smcgrath.dev/).
 
-### Site analytics using Umami hosted on Railway. Hmm?
+### Site analytics using Umami.
 
 See the live [dashboard](https://umami-production-863f.up.railway.app/share/DM50VHxJ/Blog).
 
