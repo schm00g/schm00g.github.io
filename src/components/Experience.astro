@@ -1,0 +1,53 @@
+---
+import Card from '@components/ui/Card.astro';
+import { getCollection } from 'astro:content';
+
+const experience = await getCollection('experience', ({ data }) => {
+	return !data.inProgress;
+});
+---
+
+<section
+	data-testid="experience"
+	id="experience"
+	class="mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
+>
+	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2">
+		<h2 class="font-monospace text-2xl text-purple lg:text-4xl">Experience</h2>
+		<span class="mb-10 h-1 w-10 bg-purple"></span>
+	</div>
+	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
+		{
+			experience.map((exp) => (
+				<Card
+					url={exp.data.link}
+					title={exp.data.title}
+					alt={exp.data.img_alt}
+					tags={exp.data.tags}
+				/>
+			))
+		}
+	</div>
+	<a
+		href="https://github.com/schm00g"
+		target="_blank"
+		rel="noopener"
+		class="flex flex-row text-black hover:text-purple dark:text-white dark:hover:text-purple"
+		aria-label="link to repository"
+	>
+		View personal github repositories
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			class="ml-1 h-6 w-6"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+		</svg>
+	</a>
+</section>

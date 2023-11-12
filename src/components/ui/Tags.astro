@@ -1,0 +1,17 @@
+---
+export interface Props {
+	tags?: string[];
+}
+
+const { tags } = Astro.props;
+---
+
+{
+	tags && (
+		<div class="mt-2 flex flex-row flex-wrap">
+			{tags.map((tag) => (
+				<span class="text-xs inline-block rounded-full bg-lightpurple text-purple py-1 px-2 text-xs text-black last:mr-1 mr-1 mt-1">{tag}</span>
+			))}
+		</div>
+	)
+}

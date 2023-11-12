@@ -1,0 +1,26 @@
+---
+import Button from '@components/ui/Button.astro';
+import Social from '@components/ui/Social.astro';
+---
+
+<script>
+	const buttons = document.querySelectorAll('button.email');
+  
+	buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+		window.location.href = `mailto:shane.mcgrath2@gmail.com`
+    });
+  });
+</script>
+
+<section
+	data-testid="contact"
+	id="contact"
+	class="flex flex-col flex-wrap items-center justify-center gap-8 text-black dark:text-white lg:mb-0 lg:h-screen"
+>
+	<Button class="email" size={'lg'} style={'primary'} name="Contact">Say hi!</Button>
+	<hr class="w-1/2" />
+	<div class="flex flex-col gap-8 lg:flex lg:flex-row lg:gap-20">
+		<Social />
+	</div>
+</section>
