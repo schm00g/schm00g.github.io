@@ -123,9 +123,10 @@ All commands are run from the root of the project, from a terminal:
 
 ## To Do
 
-- host on github https://docs.astro.build/en/guides/deploy/github/ []
-- add three js model ascii to background []
-- favicon []
+- host on github https://docs.astro.build/en/guides/deploy/github/ [*]
+- add three js model ascii to background [*]
+- fix mobile view []
+- favicon [*]
 - choose colorway [~]
 - fonts https://fontsource.org/ []
 - read: https://www.blackspike.com/blog/why-we-chose-astro-over-nuxt/
