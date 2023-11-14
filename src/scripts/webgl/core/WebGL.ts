@@ -71,7 +71,7 @@ class WebGL {
     // Special case: append effect.domElement, instead of renderer.domElement.
     // AsciiEffect creates a custom domElement (a div container) where the ASCII elements are placed.
 
-    // document.body.appendChild( this.effect.domElement ); // DON'T APPEND ASCII OBJECT FOR NOW
+    // document.body.appendChild(this.effect.domElement); // DON'T APPEND ASCII OBJECT FOR NOW
 
     this.controls = new TrackballControls(this.camera, this.effect.domElement);
 
