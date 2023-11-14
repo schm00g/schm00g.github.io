@@ -125,14 +125,14 @@ Why [Umami](https://umami.is/)? Well it's private and anonymised meaning no data
 
 ```
 - fix mobile view []
-- set dark mode by default [*]
 - fix scrolling issue with 3D model []
+- fonts https://fontsource.org/ []
+- set dark mode by default [*]
 - host on github https://docs.astro.build/en/guides/deploy/github/ [*]
-- add three js model ascii to background [*]
+- add three js model ascii (nay) to background [*]
 - link to view resume in google sheets [*]
 - clean up README.md [~]
 - favicon [*]
 - choose colorway [~]
-- fonts https://fontsource.org/ []
 - read: https://www.blackspike.com/blog/why-we-chose-astro-over-nuxt/
 ```
