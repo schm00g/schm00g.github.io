@@ -124,6 +124,8 @@ Why [Umami](https://umami.is/)? Well it's private and anonymised meaning no data
 
 ```
 - fix mobile view []
+- move to github project tickets []
+- resolve light house scores []
 - link to source code [*]
 - fix scrolling issue with 3D model []
 - fonts https://fontsource.org/ []
