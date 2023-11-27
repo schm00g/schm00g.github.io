@@ -12,7 +12,7 @@
 📌 [https://smcgrath.dev](https://smcgrath.dev)
 
 ## Project Tickets
-- [See live tickets here](https://github.com/users/schm00g/projects/2)
+🎟 [See live tickets here](https://github.com/users/schm00g/projects/2)
 
 ## Features
 
