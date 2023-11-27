@@ -122,22 +122,3 @@ All commands are run from the root of the project, from a terminal:
 See the live [dashboard](https://umami-production-863f.up.railway.app/share/DM50VHxJ/Blog).
 
 Why [Umami](https://umami.is/)? Well it's private and anonymised meaning no data is shared with third-parties. 
-
-## To Do
-
-```
-- fix mobile view []
-- move to github project tickets []
-- resolve light house scores []
-- link to source code [*]
-- fix scrolling issue with 3D model []
-- fonts https://fontsource.org/ []
-- set dark mode by default [*]
-- host on github https://docs.astro.build/en/guides/deploy/github/ [*]
-- add three js model ascii (nay) to background [*]
-- link to view resume in google sheets [*]
-- clean up README.md [~]
-- favicon [*]
-- choose colorway [~]
-- read: https://www.blackspike.com/blog/why-we-chose-astro-over-nuxt/
-```
