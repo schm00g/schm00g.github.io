@@ -11,6 +11,9 @@
 
 📌 [https://smcgrath.dev](https://smcgrath.dev)
 
+## Project Tickets
+- [See live tickets here](https://github.com/users/schm00g/projects/2)
+
 ## Features
 
 ✔️ Integration with **Tailwind CSS** ([@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)) supporting **Dark mode**.
