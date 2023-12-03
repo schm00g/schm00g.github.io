@@ -1,19 +1,33 @@
-import * as THREE from "three";
+import {
+  WebGLRenderer,
+  Scene,
+  PerspectiveCamera,
+  Clock,
+  Color,
+  Mesh,
+  PlaneGeometry,
+  MeshBasicMaterial,
+  PointLight,
+  SphereGeometry,
+  MeshPhongMaterial,
+  Material,
+  BufferGeometry,
+} from "three";
 import Stats from "three/examples/jsm/libs/stats.module";
 import { TrackballControls } from "three/examples/jsm/controls/TrackballControls";
 import { AsciiEffect } from "three/examples/jsm/effects/AsciiEffect";
 
 class WebGL {
-  public renderer: THREE.WebGLRenderer;
-  public scene: THREE.Scene;
-  public camera: THREE.PerspectiveCamera;
+  public renderer: WebGLRenderer;
+  public scene: Scene;
+  public camera: PerspectiveCamera;
   public time = { delta: 0, elapsed: 0 };
   public start: number = Date.now();
   public effect: any;
   public sphere: any;
   public controls: any;
 
-  private clock = new THREE.Clock();
+  private clock = new Clock();
   private resizeCallback?: () => void;
   private stats?: Stats;
 
@@ -27,38 +41,38 @@ class WebGL {
 
     window.addEventListener("resize", this.onWindowResize);
 
-    this.camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
+    this.camera = new PerspectiveCamera(70, width / height, 1, 1000);
     this.camera.position.y = 150 + 300;
     this.camera.position.z = 500 + 300;
 
-    this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0, 0, 0);
+    this.scene = new Scene();
+    this.scene.background = new Color(0, 0, 0);
 
-    const pointLight1 = new THREE.PointLight(0xffffff, 3, 0, 0);
+    const pointLight1 = new PointLight(0xffffff, 3, 0, 0);
     pointLight1.position.set(500, 500, 500);
     this.scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight(0xffffff, 1, 0, 0);
+    const pointLight2 = new PointLight(0xffffff, 1, 0, 0);
     pointLight2.position.set(-500, -500, -500);
     this.scene.add(pointLight2);
 
-    this.sphere = new THREE.Mesh(
-      new THREE.SphereGeometry(200, 20, 10),
-      new THREE.MeshPhongMaterial({ flatShading: true })
+    this.sphere = new Mesh(
+      new SphereGeometry(200, 20, 10),
+      new MeshPhongMaterial({ flatShading: true })
     );
     this.scene.add(this.sphere);
 
     // Plane
 
-    const plane = new THREE.Mesh(
-      new THREE.PlaneGeometry(400, 400),
-      new THREE.MeshBasicMaterial({ color: 0xe0e0e0 })
+    const plane = new Mesh(
+      new PlaneGeometry(400, 400),
+      new MeshBasicMaterial({ color: 0xe0e0e0 })
     );
     plane.position.y = -200;
     plane.rotation.x = -Math.PI / 2;
     this.scene.add(plane);
 
-    this.renderer = new THREE.WebGLRenderer();
+    this.renderer = new WebGLRenderer();
     this.renderer.setSize(width, height);
 
     this.effect = new AsciiEffect(this.renderer, " .:-+*=%@#", {
@@ -106,11 +120,8 @@ class WebGL {
     this.resizeCallback = callback;
   }
 
-  getMesh<T extends THREE.Material>(name: string) {
-    return this.scene.getObjectByName(name) as THREE.Mesh<
-      THREE.BufferGeometry,
-      T
-    >;
+  getMesh<T extends Material>(name: string) {
+    return this.scene.getObjectByName(name) as Mesh<BufferGeometry, T>;
   }
 
   render() {
@@ -123,8 +134,8 @@ class WebGL {
     // this.controls.update();
 
     this.scene.background = document.documentElement.classList.contains("dark")
-      ? new THREE.Color("black")
-      : new THREE.Color("white");
+      ? new Color("black")
+      : new Color("white");
 
     this.effect.render(this.scene, this.camera);
   }
