@@ -93,13 +93,21 @@ class WebGL {
   }
 
   private onWindowResize() {
-    const { width, height } = this.size;
+    let width: number, height: number;
 
-    this.camera.aspect = width / height;
-    this.camera.updateProjectionMatrix();
+    if (this.size) {
+      const { width: w, height: h } = this.size;
+      width = w;
+      height = h;
 
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.effect.setSize(window.innerWidth, window.innerHeight);
+      this.camera.aspect = width / height;
+      this.camera.updateProjectionMatrix();
+
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      this.effect.setSize(window.innerWidth, window.innerHeight);
+    } else {
+      console.error("this.size is undefined");
+    }
   }
 
   get size() {
