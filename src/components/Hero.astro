@@ -1,25 +1,33 @@
 ---
-import Button from '@components/ui/Button.astro';
-import Render from '@components/Render.astro';
+import Button from "@components/ui/Button.astro";
+import Render from "@components/Render.astro";
 ---
 
 <section
-	data-testid="hero"
-	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+  data-testid="hero"
+  class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
 >
-	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
-		<div>
-			<h1 class="mb-10 text-left font-bold font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-				Hi! My name is <span class="text-purple">Shane McGrath</span> and I am a product engineer based in Ireland.
-			</h1>
-		</div>
-		<div class="mb-10">
-			<a href={'#about'}>
-				<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
-			</a>
-		</div>
-	</div>
-	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center hidden md:block">
-		<Render />
-	</div>
+  <div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
+    <div>
+      <h1
+        class="text-6xl mb-10 text-left font-bold text-black dark:text-white lg:text-5xl"
+      >
+        Hi! My name is <span class="text-purple">Shane McGrath</span> and I am a
+        product engineer based in Ireland.
+      </h1>
+    </div>
+    <div class="mb-10">
+      <a href={"#about"}>
+        <Button style={"primary"} size={"lg"} class={"flex"} name="learn more">
+          Learn more
+        </Button>
+      </a>
+    </div>
+  </div>
+  <div
+    data-testid="hero-img"
+    class="mb-10 flex hidden w-1/2 items-center justify-center md:block"
+  >
+    <Render />
+  </div>
 </section>
