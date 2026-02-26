@@ -58,7 +58,7 @@ class WebGL {
 
     this.sphere = new Mesh(
       new SphereGeometry(200, 20, 10),
-      new MeshPhongMaterial({ flatShading: true })
+      new MeshPhongMaterial({ flatShading: true }),
     );
     this.scene.add(this.sphere);
 
@@ -66,7 +66,7 @@ class WebGL {
 
     const plane = new Mesh(
       new PlaneGeometry(400, 400),
-      new MeshBasicMaterial({ color: 0xe0e0e0 })
+      new MeshBasicMaterial({ color: 0xe0e0e0 }),
     );
     plane.position.y = -200;
     plane.rotation.x = -Math.PI / 2;
