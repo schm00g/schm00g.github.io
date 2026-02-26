@@ -31,7 +31,9 @@ const { title = "Shane McGrath | Web developer" } = Astro.props as LayoutProps;
   <body
     class="mx-auto max-w-screen-xl bg-white px-5 font-sans text-white dark:bg-black xs:text-[16px] md:text-[18px]"
   >
-    <Navbar />
+    <div class="relative z-50">
+      <Navbar />
+    </div>
     <slot />
     <Footer />
     <style is:global>
@@ -56,6 +58,14 @@ const { title = "Shane McGrath | Web developer" } = Astro.props as LayoutProps;
         transition: background-color 0.25s ease, color 0.25s ease;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+      nav {
+        position: relative;
+        z-index: 50;
+      }
+      canvas {
+        z-index: 0;
+        position: relative;
       }
     </style>
     <script src="../scripts/entry.ts"></script>
