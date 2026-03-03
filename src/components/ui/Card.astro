@@ -4,6 +4,7 @@ import axial3d from "@assets/images/axial3d.png";
 import pmdsolutionsltd from "@assets/images/pmdsolutionsltd.jpg";
 import { Image } from "@astrojs/image/components";
 import Tags from "@components/ui/Tags.astro";
+
 interface Props {
   url?: string;
   alt?: string;
@@ -25,7 +26,7 @@ const {
     data-testId="card"
     class="rounded-xl bg-white p-3 shadow-lg duration-300 hover:scale-105 hover:transform hover:shadow-xl"
   >
-    <div class="relative flex items-end overflow-hidden rounded-xl">
+    <div class="relative w-full overflow-hidden rounded-xl">
       <Image
         src={[axial3d, pmdsolutionsltd, sustainlife][
           title.toLowerCase().includes("axial")
@@ -37,9 +38,10 @@ const {
         alt={alt}
         aspectRatio="4:4"
         format="png"
-        width={400}
-        height={400}
+        width={800}
+        height={800}
         loading="eager"
+        class="h-auto w-full object-cover"
       />
     </div>
     <div class="mt-1 p-2">
