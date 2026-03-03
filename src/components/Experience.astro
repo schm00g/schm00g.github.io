@@ -10,15 +10,15 @@ const experience = await getCollection("experience", ({ data }) => {
 <section
   data-testid="experience"
   id="experience"
-  class="mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
+  class="mb-20 flex flex-col items-center justify-center py-20"
 >
-  <div
-    class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2"
-  >
+  <div class="mb-10 flex w-full flex-col items-center justify-center lg:w-1/2">
     <h2 class="text-2xl text-purple lg:text-4xl">Experience</h2>
     <span class="mb-10 h-1 w-10 bg-purple"></span>
   </div>
-  <div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
+  <div
+    class="mb-10 flex w-full flex-row flex-wrap items-stretch justify-center"
+  >
     {
       experience.map((exp) => (
         <Card
